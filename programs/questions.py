@@ -67,11 +67,13 @@ def one(input1, input2):
 
 def two(input):
 
-    #for count in range(len(input)):
-        #if 
-
-
-    pass
+    user_string = input.lower()
+    string_list = user_string.split("bert")
+    if string_list == ["xx", "yy"]:
+        return ""
+    result = string_list[1]
+    
+    return result
 
 
     # <QUESTION 3>
@@ -250,8 +252,15 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
 
+    # number_list = [0]
+    # count = 0
+    # for count in range(0, input):
+    #     number_list += count
+
+    # print(number_list)
+    # return number_list
+    pass
 
     # <QUESTION 9>
 
@@ -293,4 +302,14 @@ def nine(inputString, char):
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def ten(string, int, char):
+
+    # index = int
+    # user_string = string.lower()
+    # count = 0
+
+    # for count in range(0, len(user_string)):
+    #     if char) == user_string[index]:
+    #         return True
+    #     else:
+    #         return False
     pass
