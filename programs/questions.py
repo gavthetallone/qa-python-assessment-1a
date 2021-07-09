@@ -203,16 +203,17 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-    #input_list = list(input)
+    input_list = list(input)
 
-    #for letter in input:
-        # if input_list(letter) == "c" and input_list(letter+1) == "i":
-        #     return False
-        # elif input_list(letter) == "i" and input_list(letter+1) == "e":
-        #     return True
-        # else:
-        #     return False
-    pass
+    for count in range(0, len(input)):
+        if input_list[count] == "c" and input_list[count+1] == "i":
+            return False
+        elif input_list[count] == "i" and input_list[count+1] == "e":
+            return True
+        elif input_list[count] == "c" and input_list[count+1] == "e" and input_list[count+2] == "i":
+            return True
+    else:
+        return False
 
 
     # <QUESTION 7>
