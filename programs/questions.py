@@ -72,7 +72,7 @@ def two(input):
     if string_list == ["xx", "yy"]:
         return ""
     result = string_list[1]
-    
+
     return result
 
 
@@ -131,6 +131,17 @@ def three(arg1):
 def four(arg1):
     # string_list = arg1.split()
     # print(string_list)
+    # numbers = [0]*3
+
+    # for i in string_list:
+    #     if len(string_list[i]) == 2:
+    #         temp = string_list[i]
+    #         numbers[i] = int(temp[0]) + int(temp[1])
+        
+    #     elif len(string_list[i]) == 3:
+    #         temp = string_list[i]
+    #         numbers[i] = int(temp[0]) + int(temp[1]) + int(temp[2])
+
     # num_list = ""
     # value_list = ""
 
@@ -141,8 +152,7 @@ def four(arg1):
     
     # return value_list
     pass
-        
-        
+         
   
 
 
