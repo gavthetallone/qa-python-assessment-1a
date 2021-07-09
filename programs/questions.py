@@ -129,30 +129,29 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    # string_list = arg1.split()
-    # print(string_list)
-    # numbers = [0]*3
 
-    # for i in string_list:
-    #     if len(string_list[i]) == 2:
-    #         temp = string_list[i]
-    #         numbers[i] = int(temp[0]) + int(temp[1])
-        
-    #     elif len(string_list[i]) == 3:
-    #         temp = string_list[i]
-    #         numbers[i] = int(temp[0]) + int(temp[1]) + int(temp[2])
-
-    # num_list = ""
-    # value_list = ""
-
-    # for i in string_list:
-    #     num_list = str(string_list[i])
-    #     value_list += str(int(num_list[0]) + int(num_list[1]))
-    #     print(value_list)
+    number_list = arg1.split()
     
-    # return value_list
-    pass
-         
+    int_list = [0]*len(number_list)
+
+    for count in range(0, len(number_list)):
+        if len(number_list[count]) == 3:
+            temp_str = number_list[count]
+            int_list[count] = int(temp_str[0]) + int(temp_str[1]) + int(temp_str[2])
+        elif len(number_list[count]) == 2:
+            temp_str = number_list[count]
+            int_list[count] = int(temp_str[0]) + int(temp_str[1])
+        else:
+            temp_str = number_list[count]
+            int_list[count] = int(temp_str)
+    
+    max_value = 0
+    
+    for i in range(0, len(int_list)):
+        if int_list[i] > max_value:
+            max_value = int_list[i]
+
+    return max_value
   
 
 
