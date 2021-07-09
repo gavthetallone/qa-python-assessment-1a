@@ -127,7 +127,21 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
+    # string_list = arg1.split()
+    # print(string_list)
+    # num_list = ""
+    # value_list = ""
+
+    # for i in string_list:
+    #     num_list = str(string_list[i])
+    #     value_list += str(int(num_list[0]) + int(num_list[1]))
+    #     print(value_list)
+    
+    # return value_list
     pass
+        
+        
+  
 
 
     # <QUESTION 5>
@@ -177,6 +191,15 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
+    #input_list = list(input)
+
+    #for letter in input:
+        # if input_list(letter) == "c" and input_list(letter+1) == "i":
+        #     return False
+        # elif input_list(letter) == "i" and input_list(letter+1) == "e":
+        #     return True
+        # else:
+        #     return False
     pass
 
 
@@ -195,7 +218,20 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+
+    input_list = list(input.lower())
+    vowels_list = ['a', 'e', 'i' , 'o', 'u']
+
+    count = 0
+
+    for i in input_list:
+         for j in vowels_list:
+             if i == j:
+                 count += 1
+
+    return count          
+
+
 
 
     # <QUESTION 8>
