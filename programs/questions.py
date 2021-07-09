@@ -181,7 +181,28 @@ def four(arg1):
     # help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
-    pass
+    values_list = input.split(",")
+    keys_list = ["owner", "nameOfFile", "encrypted?", "fileSize"]
+
+    if len(values_list) == 4:
+        my_dict1 = dict(zip(keys_list, values_list))
+        if "False" in my_dict1.values():
+            result = [my_dict1["owner"]]
+        
+    else:
+        my_dict1 = dict(zip(keys_list, values_list[:4]))
+        my_dict2 = dict(zip(keys_list, values_list[4:8]))
+        my_dict3 = dict(zip(keys_list, values_list[8:]))
+
+        dict_list = [my_dict1, my_dict2, my_dict3]
+        result = ""
+    
+        for count in range(0, len(dict_list)):
+            if "False" in dict_list[count].values():
+                result += dict_list[count]["owner"] + " "
+        
+        result = sorted(set(result.split()))
+    return result
 
 
     # <QUESTION 6>
