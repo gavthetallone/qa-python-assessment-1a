@@ -323,13 +323,11 @@ def nine(inputString, char):
 
 def ten(string, int, char):
 
-    # index = int
-    # user_string = string.lower()
-    # count = 0
-
-    # for count in range(0, len(user_string)):
-    #     if char) == user_string[index]:
-    #         return True
-    #     else:
-    #         return False
-    pass
+    index = int
+    user_string = string.lower()
+    count = 0
+    for count in range(0, len(user_string)):
+        if char == user_string[count] and index == count+1:
+            return True
+    else:
+        return False
