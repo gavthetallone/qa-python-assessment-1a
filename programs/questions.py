@@ -264,14 +264,18 @@ def seven(input):
 
 def eight(input):
 
-    # number_list = [0]
-    # count = 0
-    # for count in range(0, input):
-    #     number_list += count
+    number_list = [0]*(input+1)
+    
+    for count in range(1, input+1):
+        number_list[count] = count
+    
+    number_list.remove(0)
 
-    # print(number_list)
-    # return number_list
-    pass
+    result = 1
+    for i in range(0, len(number_list)):
+        result *= number_list[i]
+
+    return result
 
     # <QUESTION 9>
 
